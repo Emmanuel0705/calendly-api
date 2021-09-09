@@ -36,7 +36,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-const port = 9090;
+const port = process.env.PORT || 9090;
 
 app.listen(port, () => {
   console.log(`App is running on port ${port}`);
