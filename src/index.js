@@ -1,6 +1,10 @@
 const { default: axios } = require("axios");
 const express = require("express");
+const cors = require("cors");
+
 const app = express();
+//add cors middleware
+app.use(cors())
 
 const eventUrl =
   "https://www.googleapis.com/calendar/v3/calendars/primary/events";
