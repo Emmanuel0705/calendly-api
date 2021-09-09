@@ -26,7 +26,7 @@ app.get("/", async (req, res) => {
     const { items } = resp.data;
     const data = items.map((item) => ({
       title: item.summary,
-      discription: item.description,
+      description: item.description,
       start: item.start?.dateTime,
       url: item.location,
     }));
